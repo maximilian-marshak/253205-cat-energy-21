@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Check status][check-image]][check-url]
 
 * Студент: [Максим Русаков](https://up.htmlacademy.ru/adaptive/21/user/253205).
-* Наставник: Ирина Фролова.
+* Наставник: [Ирина Фролова](https://htmlacademy.ru/profile/id1043867).
 
 ---
 
