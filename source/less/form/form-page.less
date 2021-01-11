@@ -41,6 +41,19 @@
   padding-left: 15px;
   padding-top: 13px;
   padding-bottom: 14px;
+  border: 1px solid @special-lightest-gray;
+}
+
+.form-page__input:hover {
+  border: 1px solid @special-lighter-gray;
+}
+
+.form-page__input:focus {
+  border: 2px solid @special-dark-gray;
+}
+
+.form-page__input:invalid {
+  border: 2px solid @basic-error;
 }
 
 .form-page__contact-title,
@@ -54,6 +67,7 @@
   height: 151px;
   padding-top: 10px;
   padding-left: 15px;
+  border: 1px solid @special-lighter-gray;
   .form-label;
 }
 
@@ -69,6 +83,11 @@
 
 .form-page__button:active {
   color: @white-color-opacity;
+  border: none;
+}
+
+.form-page__button:focus {
+  border: none;
 }
 
 .form-page__clarification {
