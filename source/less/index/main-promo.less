@@ -1,5 +1,9 @@
 .main-promo {
   background-color: @green-bg-color;
+
+  @media (min-width: @tablet-width) {
+    background-color: @white-color;
+  }
 }
 
 .main-promo__header {
@@ -7,6 +11,13 @@
   line-height: 36px;
   color: @white-color;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    max-width: 414px;
+    text-align: left;
+    line-height: 60px;
+    color: @black-color;
+  }
 }
 
 .main-promo__sub-title {
@@ -17,10 +28,28 @@
   text-transform: uppercase;
   color: @white-color;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: @black-color;
+  }
 }
 
 .main-promo__button {
   .all-buttons;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .main-promo__button:hover {
