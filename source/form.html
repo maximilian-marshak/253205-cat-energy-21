@@ -51,108 +51,112 @@
       <!--form title-->
 
       <section class="form-page wrapper">
-        <h1 class="form-page__title title">
-          Подбор программы
-        </h1>
-        <p class="form-page__description">
-          Заполните анкету, и мы подберем программу питания для вашего кота
-        </p>
-
-        <!--form-->
-
-        <form action="https://echo.htmlacademy.ru" class="form-page__form" method="GET">
-
-          <!--form common fields-->
-
-          <fieldset class="form-page__common">
-            <label class="form-page__label" for="name">
-              Имя:*
-              <input class="form-page__input" type="text" name="name" id="name" required placeholder="Барсик">
-            </label>
-            <label class="form-page__label" for="weight">
-              Вес:*
-              <input class="form-page__input" type="number" name="weight" id="weight" min="0" max="60" required placeholder="7">
-            </label>
-            <label class="form-page__label" for="age">
-              Возраст (лет):
-              <input class="form-page__input" type="number" name="age" id="age" min="0" max="20" placeholder="7">
-            </label>
-          </fieldset>
-
-          <!--form preferences fields-->
-
-          <fieldset class="form-page__preferences">
-            <label class="form-page__label" for="weightLoss">
-              <input class="form-page__input" type="radio" name="preference" id="weightLoss" value="Weight_loss" checked>
-              Похудение
-            </label>
-            <label class="form-page__label" for="weightGain">
-              <input class="form-page__input" type="radio" name="preference" id="weightGain" value="Weight_gain">
-              Набор массы
-            </label>
-            <label class="form-page__label" for="needAdvice">
-              <input class="form-page__input" type="radio" name="preference" id="needAdvice" value="Advice">
-              Не знаю (Нужен ваш совет)
-            </label>
-          </fieldset>
-
-          <!--form contact fields-->
-
-          <fieldset class="form-page__contact">
-            <legend class="form-page__contact-title">
-              Контактные данные (владельца кота)
-            </legend>
-            <label class="form-page__label" for="contactEmail">
-              E-mail:*
-              <input class="form-page__input" type="email" name="contact" id="contactEmail" required placeholder="kuklachev@gmail.com">
-            </label>
-            <label class="form-page__label" for="contactTel">
-              Телефон:*
-              <input class="form-page__input" type="tel" name="contact" id="contactTel" required placeholder="8 (960) 900-60-90" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18">
-            </label>
-          </fieldset>
-
-          <!--form text field-->
-
-          <fieldset class="form-page__comment">
-            <legend class="form-page__comment-title">
-              Комментарий
-            </legend>
-            <textarea class="form-page__textarea" name="comment">Расскажите обо всех повадках кота
-            </textarea>
-          </fieldset>
-
-          <!--form additional fields-->
-
-          <fieldset class="form-page__additional">
-            <legend class="form-page__additional-title">
-              Дополнительно
-            </legend>
-            <label class="form-page__label" for="sugarSubstitute">
-              <input class="form-page__input" type="checkbox" name="additional" id="sugarSubstitute" value="Sugar_substitute" checked>
-              Сахорозаменитель
-            </label>
-            <label class="form-page__label" for="drinkingWater">
-              <input class="form-page__input" type="checkbox" name="additional" id="drinkingWater" value="Drinking_water">
-              Питьевая вода
-            </label>
-            <label class="form-page__label" for="milk">
-              <input class="form-page__input" type="checkbox" name="additional" id="milk" value="Milk">
-              Молоко
-            </label>
-            <label class="form-page__label" for="vitamins">
-              <input class="form-page__input" type="checkbox" name="additional" id="vitamins" value="Vitamins">
-              Витамины
-            </label>
-          </fieldset>
-
-          <!--form button-->
-
-          <button class="form-page__button" type="submit">Отправить заявку</button>
-          <p class="form-page__clarification">
-            * — Обязательные поля
+        <div class="form-wrapper">
+          <h1 class="form-page__title title">
+            Подбор программы
+          </h1>
+          <p class="form-page__description">
+            Заполните анкету, и мы подберем программу питания для вашего кота
           </p>
-        </form>
+
+          <!--form-->
+
+          <form action="https://echo.htmlacademy.ru" class="form-page__form" method="GET">
+            <div class="form-common-wrapper">
+              <!--form common fields-->
+
+              <fieldset class="form-page__common">
+                <label class="form-page__label" for="name">
+                  Имя:*
+                  <input class="form-page__input form-page__input--name" type="text" name="name" id="name" required placeholder="Барсик">
+                </label>
+                <label class="form-page__label" for="weight">
+                  Вес (кг):*
+                  <input class="form-page__input form-page__input--weight" type="number" name="weight" id="weight" min="0" max="60" required placeholder="7">
+                </label>
+                <label class="form-page__label" for="age">
+                  Возраст (лет):
+                  <input class="form-page__input form-page__input--age" type="number" name="age" id="age" min="0" max="20" placeholder="7">
+                </label>
+              </fieldset>
+
+              <!--form preferences fields-->
+
+              <fieldset class="form-page__preferences">
+                <label class="form-page__label form-page__label--radio" for="weightLoss">
+                  <input class="form-page__input form-page__input--radio" type="radio" name="preference" id="weightLoss" value="Weight_loss" checked>
+                  Похудение
+                </label>
+                <label class="form-page__label form-page__label--radio" for="weightGain">
+                  <input class="form-page__input form-page__input--radio" type="radio" name="preference" id="weightGain" value="Weight_gain">
+                  Набор массы
+                </label>
+                <label class="form-page__label form-page__label--radio" for="needAdvice">
+                  <input class="form-page__input form-page__input--radio" type="radio" name="preference" id="needAdvice" value="Advice">
+                  Не знаю (Нужен ваш совет)
+                </label>
+              </fieldset>
+
+            </div>>
+
+            <!--form contact fields-->
+
+            <fieldset class="form-page__contact">
+              <legend class="form-page__contact-title form-page__legend">
+                Контактные данные (владельца кота)
+              </legend>
+              <label class="form-page__label form-page__label--contact" for="contactEmail">
+                E-mail:*
+                <input class="form-page__input form-page__input--email" type="email" name="contact" id="contactEmail" required placeholder="kuklachev@gmail.com">
+              </label>
+              <label class="form-page__label form-page__label--contact" for="contactTel">
+                Телефон:*
+                <input class="form-page__input form-page__input--tel" type="tel" name="contact" id="contactTel" required placeholder="8 (960) 900-60-90" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18">
+              </label>
+            </fieldset>
+
+            <!--form text field-->
+
+            <fieldset class="form-page__comment">
+              <legend class="form-page__comment-title form-page__legend">
+                Комментарий
+              </legend>
+              <textarea class="form-page__textarea" name="comment">Расскажите обо всех повадках кота
+              </textarea>
+            </fieldset>
+
+            <!--form additional fields-->
+
+            <fieldset class="form-page__additional">
+              <legend class="form-page__additional-title form-page__legend">
+                Дополнительно
+              </legend>
+              <label class="form-page__label form-page__label--checkbox" for="sugarSubstitute">
+                <input class="form-page__input" type="checkbox" name="additional" id="sugarSubstitute" value="Sugar_substitute" checked>
+                Сахорозаменитель
+              </label>
+              <label class="form-page__label form-page__label--checkbox" for="drinkingWater">
+                <input class="form-page__input" type="checkbox" name="additional" id="drinkingWater" value="Drinking_water">
+                Питьевая вода
+              </label>
+              <label class="form-page__label form-page__label--checkbox" for="milk">
+                <input class="form-page__input" type="checkbox" name="additional" id="milk" value="Milk">
+                Молоко
+              </label>
+              <label class="form-page__label form-page__label--checkbox" for="vitamins">
+                <input class="form-page__input" type="checkbox" name="additional" id="vitamins" value="Vitamins">
+                Витамины
+              </label>
+            </fieldset>
+
+            <!--form button-->
+
+            <button class="form-page__button" type="submit">Отправить заявку</button>
+            <p class="form-page__clarification">
+              * — Обязательные поля
+            </p>
+          </form>
+        </div>
       </section>
 
       <!--main map block-->
@@ -170,7 +174,7 @@
           </div>
         </div>
         <div class="map__map">
-          <iframe src="https://yandex.by/map-widget/v1/-/CCUEbHCx0A" height="362" allowfullscreen="" style="position:relative;">
+          <iframe src="https://yandex.by/map-widget/v1/-/CCUEbHCx0A" width="100%" height="362" allowfullscreen="" style="position:relative;">
           </iframe>
         </div>
       </section>
