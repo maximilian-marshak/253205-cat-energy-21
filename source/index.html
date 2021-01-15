@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
@@ -97,6 +98,7 @@
                 <a href="" class="main-product__button-title">
                   Каталог Pro
                 </a>
+                <img class="main-product__button-image" width="32" height="11" src="https://via.placeholder.com/150x150" alt="Стрелка перехода на детальную страницу продукта">
               </div>
             </li>
           </ul>
@@ -145,46 +147,48 @@
           <p class="main-example__description">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
-          <div class="main-example__figures">
-            <ul class="main-example__list">
-              <li class="main-example__item">
-                <p class="main-example__item-description">
-                  5 кг
-                </p>
-                <p class="main-example__item-clarification">
-                  снижение веса
-                </p>
-              </li>
-              <li class="main-example__item">
-                <p class="main-example__item-description">
-                  60 дней
-                </p>
-                <p class="main-example__item-clarification">
-                  затрачено времени
-                </p>
-              </li>
-            </ul>
-            <p class="main-example__list-description">
-              Затраты на питание: 15 000 РУБ.
-            </p>
-          </div>
-          <div class="main-example__slider">
-            <ul class="main-example__slider-list">
-              <li class="main-example__slider-item">
-                <img class="main-example__slider-img" width="271" height="232" src="https://via.placeholder.com/150x150" alt="Толстый кот до приема корма Кэт энерджи">
-              </li>
-              <li class="main-example__slider-item">
-                <img class="main-example__slider-img" width="271" height="232" src="https://via.placeholder.com/150x150" alt="Худой кот после приема корма Кэт энерджи">
-              </li>
-            </ul>
-            <div class="main-example__toggle">
-              <div class="main-example__toggle-slider">
-                <p class="main-example__toggle-description">
-                  Было
-                </p>
-                <p class="main-example__toggle-description">
-                  Стало
-                </p>
+          <div class="main-example__wrapper">
+            <div class="main-example__figures">
+              <ul class="main-example__list">
+                <li class="main-example__item">
+                  <p class="main-example__item-description">
+                    5 кг
+                  </p>
+                  <p class="main-example__item-clarification">
+                    снижение веса
+                  </p>
+                </li>
+                <li class="main-example__item">
+                  <p class="main-example__item-description">
+                    60 дней
+                  </p>
+                  <p class="main-example__item-clarification">
+                    затрачено времени
+                  </p>
+                </li>
+              </ul>
+              <p class="main-example__list-description">
+                Затраты на питание: 15 000 РУБ.
+              </p>
+            </div>
+            <div class="main-example__slider">
+              <ul class="main-example__slider-list">
+                <li class="main-example__slider-item">
+                  <img class="main-example__slider-img" width="271" height="232" src="https://via.placeholder.com/150x150" alt="Толстый кот до приема корма Кэт энерджи">
+                </li>
+                <li class="main-example__slider-item">
+                  <img class="main-example__slider-img" width="271" height="232" src="https://via.placeholder.com/150x150" alt="Худой кот после приема корма Кэт энерджи">
+                </li>
+              </ul>
+              <div class="main-example__toggle">
+                <div class="main-example__toggle-slider">
+                  <p class="main-example__toggle-description">
+                    Было
+                  </p>
+                  <p class="main-example__toggle-description">
+                    Стало
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -206,7 +210,7 @@
           </div>
         </div>
         <div class="map__map">
-          <iframe src="https://yandex.by/map-widget/v1/-/CCUEbHCx0A" height="362" allowfullscreen="" style="position:relative;">
+          <iframe src="https://yandex.by/map-widget/v1/-/CCUEbHCx0A" height="362" width="100%" allowfullscreen="" style="position:relative;">
           </iframe>
         </div>
       </section>
@@ -214,8 +218,7 @@
 
     <!--footer-->
 
-    <footer class="page-footer">
-      <div class="wrapper">
+    <footer class="page-footer wrapper">
 
         <!--footer logo-->
 
@@ -255,7 +258,6 @@
             <img class="copyright__logo" width="163" height="34" src="https://via.placeholder.com/150x150" alt="Логотип компании разработчика">
           </a>
         </div>
-      </div>
     </footer>
   </body>
 </html>
