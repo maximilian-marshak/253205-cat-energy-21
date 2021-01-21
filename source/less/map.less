@@ -1,3 +1,19 @@
+.map {
+  position: relative;
+}
+
+.map::after {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -460px;
+    min-width: 1440px;
+    height: 462px;
+    background-color: @special-gray;
+  }
+}
+
 .map--dark {
   background-color: @special-gray;
 }
@@ -6,19 +22,51 @@
   background-color: @white-color;
 }
 
+.map__header {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    padding: 66px 40px 63px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    align-items: center;
+    width: 405px;
+    height: 201px;
+    background-color: @white-color;
+    padding: 0 89px 0 76px;
+  }
+}
+
 .map__description {
   font-family: @font-family-origin;
   font-size: 16px;
   line-height: 18px;
   color: @special-black-color;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+    margin: 0 295px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 87px 0 0;
+  }
 }
 
 .map__adress {
   .main-description;
-}
 
-.map__header {
-  display: flex;
-  justify-content: space-between;
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    margin: 0;
+  }
 }

@@ -1,8 +1,51 @@
 .main-promo {
+  position: relative;
+  background-image: url("/img/index/index-background-mobile.jpg");
   background-color: @green-bg-color;
+  background-repeat: no-repeat;
+  min-height: 302px;
+  margin-bottom: 200px;
 
   @media (min-width: @tablet-width) {
     background-color: @white-color;
+    background-image: none;
+    margin-bottom: 629px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 250px;
+  }
+}
+
+.main-promo--image {
+  position: relative;
+}
+
+.main-promo--image::after {
+  content: "";
+  position: absolute;
+  top: 170px;
+  left: auto;
+  right: auto;
+  background-image: url("/img/index/promo/index-can-mobile.png");
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 270px;
+
+  @media (min-width: @tablet-width) {
+    top: 265px;
+    background-image: url("/img/index/promo/index-can-tablet.png");
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -80px;
+    left: 560px;
+    background-image: url("/img/index/promo/index-can.png");
+    width: 552px;
+    height: 499px;
+    z-index: 1;
   }
 }
 
@@ -11,12 +54,24 @@
   line-height: 36px;
   color: @white-color;
   text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-top: 27px;
 
   @media (min-width: @tablet-width) {
     max-width: 414px;
     text-align: left;
     line-height: 60px;
     color: @black-color;
+    padding-left: 87px;
+    padding-top: 64px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+    padding-left: 80px;
+    margin-bottom: 40px;
   }
 }
 
@@ -28,16 +83,34 @@
   text-transform: uppercase;
   color: @white-color;
   text-align: center;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
     text-align: left;
     color: @black-color;
+    padding-left: 87px;
   }
 }
 
+/* .main-promo__promo-image {
+  position: absolute;
+  top: 170px;
+  left: auto;
+  width: 280px;
+  height: 270px;
+
+  @media (min-width: @tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
+} */
+
 .main-promo__button {
+  position: absolute;
+  top: 440px;
+  left: auto;
   .all-buttons;
   font-size: 14px;
   line-height: 18px;
@@ -45,10 +118,19 @@
   margin-right: auto;
 
   @media (min-width: @tablet-width) {
+    width: 244px;
     font-size: 20px;
     line-height: 20px;
     margin-right: 0;
     margin-left: 0;
+    z-index: 1;
+    top: 298px;
+    left: 112px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 230px;
+    left: 195px;
   }
 }
 
