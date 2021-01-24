@@ -29,13 +29,21 @@
   }
 }
 
+.page__body--catalog.page__body::after {
+  @media (min-width: @desktop-width) {
+    background: none;
+  }
+}
+
 .page-header {
   padding-top: 11px;
+  border-bottom: 1px solid @special-lighter-gray;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     padding-top: 24px;
+    border-bottom: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -48,11 +56,11 @@
     display: block;
     width: 190px;
     height: 38px;
-    margin-bottom: 17px;
+    margin-bottom: 14px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 110px;
+    margin-bottom: 30px;
   }
 }
 

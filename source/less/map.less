@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.map::after {
+/*.map::after {
   @media (min-width: @desktop-width) {
     content: "";
     position: absolute;
@@ -12,7 +12,7 @@
     height: 462px;
     background-color: @special-gray;
   }
-}
+}*/
 
 .map--dark {
   background-color: @special-gray;
@@ -25,15 +25,17 @@
 .map__header {
   display: flex;
   justify-content: space-between;
+  margin: 0 20px 0 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 66px 40px 63px 40px;
+    padding: 54px 50px 63px 50px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     z-index: 1;
-    top: 80px;
+    top: 95px;
+    left: 89px;
     align-items: center;
     width: 405px;
     height: 201px;
@@ -45,13 +47,14 @@
 .map__description {
   font-family: @font-family-origin;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   color: @special-black-color;
   text-transform: uppercase;
+  padding-top: 12px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 25px;
     margin: 0 295px 0 0;
   }
 
@@ -62,11 +65,22 @@
 
 .map__adress {
   .main-description;
+  padding-top: 12px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
     text-align: right;
     margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}
+
+.map__map {
+  @media (min-width: @desktop-width) {
+    height: 400px;
   }
 }
