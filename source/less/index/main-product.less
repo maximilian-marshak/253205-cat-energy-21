@@ -16,6 +16,7 @@
 .main-product__item {
   background-color: @special-gray;
   min-width: 240px;
+  height: 236px;
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
@@ -54,11 +55,12 @@
     font-size: 36px;
     line-height: 36px;
     margin-left: 0;
+    margin-bottom: 25px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 162px;
-    margin-bottom: 73px;
+    margin-bottom: 76px;
   }
 }
 
@@ -74,7 +76,7 @@
   @media (min-width: @tablet-width) {
     top: 5px;
     left: auto;
-    right: 40px;
+    right: 62px;
     width: 200px;
     height: 211px;
     background-image: url("/img/index/cat_back_tablet.svg");
@@ -93,22 +95,23 @@
 .main-product__title--cat-stand::before {
   content: "";
   position: absolute;
-  left: -78px;
+  top: -5px;
+  left: -79px;
   width: 67px;
   height: 50px;
   background-image: url("/img/index/cat_stand.svg");
 
   @media (min-width: @tablet-width) {
-    top: 5px;
+    top: 17px;
     left: auto;
-    right: 28px;
+    right: 27px;
     width: 268px;
     height: 200px;
     background-image: url("/img/index/cat_stand_tablet.svg");
   }
 
   @media (min-width: @desktop-width) {
-    top: -25px;
+    top: -30px;
     left: -20px;
     width: 134px;
     height: 100px;
@@ -119,12 +122,13 @@
 
 .main-product__description {
   .main-description;
+  line-height: 19px;
   border-bottom: 1px solid @gray-color-darker;
-  padding-bottom: 23px;
+  padding-bottom: 20px;
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    width: 377px;
+    width: 344px;
     border: none;
     padding-bottom: 0;
     margin-bottom: 52px;
@@ -137,7 +141,7 @@
 }
 
 .main-product__button {
-  padding-top: 19px;
+  padding-top: 16px;
   padding-bottom: 22px;
 
   @media (min-width: @tablet-width) {
@@ -147,6 +151,7 @@
 }
 
 .main-product__button-title {
+  position: relative;
   font-family: @font-family-origin;
   text-decoration: none;
   text-transform: uppercase;
@@ -159,6 +164,29 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.main-product__button-title::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 100px;
+  width: 24px;
+  height: 12px;
+  background-image: url("/img/index/arrow.svg");
+  background-repeat:no-repeat;
+
+  @media (min-width: @tablet-width) {
+    top: 10px;
+    left: 133px;
+  }
+}
+
+.main-product__button-title:hover .main-product__button-title::after {
+  width: 32px;
+  left: 150px;
+  background-image: url("/img/index/arrow-hover.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) and (max-width: 1439px) {
