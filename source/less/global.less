@@ -16,14 +16,18 @@
 @special-lighter-gray: #CDCDCD;
 @special-lightest-gray: #E7E7E7;
 
+@special-gray-slider: #DCDCDC;
+
+@space-gray: #C4C4C4;
+
 @basic-green: #68B738;
 @basic-green-hover: #5EAA2F;
-@green-bg-color: rgba(104, 183, 56, 0.85);
-
+@green-bg-color: #7fc256;
 @basic-error: #FF8282;
 
 @font-family-origin: "Oswald", "Arial", sans-serif;
 
+@mobile-width: 320px;
 @tablet-width: 768px;
 @desktop-width: 1440px;
 
@@ -120,4 +124,10 @@
   font-size: 24px;
   line-height: 26px;
   color: @black-color;
+}
+
+br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
