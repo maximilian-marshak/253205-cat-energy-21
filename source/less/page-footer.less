@@ -8,7 +8,7 @@
 /* footer logo styles */
 
 .page-footer__logo {
-  padding-top: 37px;
+  padding-top: 42px;
   padding-bottom: 32px;
   border-bottom: 1px solid @gray-color-darker;
 
@@ -72,12 +72,30 @@
   height: 16px;
   background-image: url("/img/footer/icon_vkontakte.svg");
   background-repeat: no-repeat;
+  background-size: contain;
 
   @media (min-width: @desktop-width) {
     width: 29px;
     height: 17px;
-    background-image: url("/img/footer/icon_vkontakte_desktop.svg");
+    margin-top: 10px;
+    margin-left: 13px;
+    background-image: url("/img/footer/icon-vkontake-big.svg");
   }
+}
+
+.social__link--vkontakte:hover {
+  display: block;
+  width: 23px;
+  height: 16px;
+  background-image: url("/img/footer/icon-vkontakte-hover.svg");
+  background-size: contain;
+}
+
+.social__link--vkontakte:active {
+  display: block;
+  width: 23px;
+  height: 16px;
+  background-image: url("/img/footer/icon_vkontakte-active.svg");
 }
 
 .social__link--instagram {
@@ -90,9 +108,26 @@
   @media (min-width: @desktop-width) {
     width: 23px;
     height: 23px;
-    background-image: url("/img/footer/icon_instagram_desktop.svg");
+    background-image: url("/source/img/footer/icon_instagram-big.svg");
   }
 }
+
+.social__link--instagram:hover {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url("/img/footer/icon_instagram-hover.svg");
+  background-size: contain;
+}
+
+.social__link--instagram:active {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url("/img/footer/icon_instagram-active.svg");
+  background-size: contain;
+}
+
 
 .social__link--facebook {
   display: block;
@@ -104,15 +139,31 @@
   @media (min-width: @desktop-width) {
     width: 13px;
     height: 27px;
-    background-image: url("/img/footer/icon_facebook_desktop.svg");
+    background-image: url("/img/footer/icon_facebook-big.svg");
   }
+}
+
+.social__link--facebook:hover {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-image: url("/img/footer/icon_facebook-hover.svg");
+  background-size: contain;
+}
+
+.social__link--facebook:active {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-image: url("/img/footer/icon_facebook-active.svg");
+  background-size: contain;
 }
 
 /* copyright styles */
 
 .page-footer__copyright {
   @media (min-width: @desktop-width) {
-    margin-top: 37px;
+    margin-top: 15px;
   }
 }
 
@@ -120,7 +171,7 @@
   display: flex;
   justify-content: space-between;
   text-decoration: none;
-  padding-top: 22px;
+  padding-top: 21px;
   padding-bottom: 22px;
 }
 

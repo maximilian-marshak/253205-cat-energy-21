@@ -28,6 +28,17 @@
     height: 2px;
     background-color: @basic-green;
   }
+
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 0;
+    z-index: -1;
+    min-width: 1440px;
+    height: 2px;
+    background-color: @basic-green;
+  }
 }
 
 .additional__title {
@@ -83,7 +94,7 @@
     border-left: none;
     border-right: none;
     border-bottom: none;
-    padding-bottom: 11px;
+    padding-bottom: 10px;
   }
 }
 
@@ -155,8 +166,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-left: 2px;
+    margin-top: 13px;
+    margin-bottom: 8px;
   }
 }
 
@@ -170,5 +182,7 @@
     height: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-top: 3px;
+    margin-left: 35px;
   }
 }
