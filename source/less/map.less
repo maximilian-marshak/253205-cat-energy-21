@@ -7,7 +7,7 @@
   }
 }
 
-.map::after {
+/*.map::after {
   @media (min-width: @desktop-width) {
     content: "";
     position: absolute;
@@ -17,7 +17,7 @@
     height: 462px;
     background-color: @special-gray;
   }
-}
+}*/
 
 .map--dark {
   background-color: @special-gray;
@@ -34,6 +34,7 @@
 .map__header {
   display: flex;
   justify-content: space-between;
+  margin: 0 20px 0 20px;
 
   @media (min-width: @tablet-width) {
     padding: 54px 40px 63px 40px;
@@ -54,9 +55,10 @@
 .map__description {
   font-family: @font-family-origin;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   color: @special-black-color;
   text-transform: uppercase;
+  padding-top: 12px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -71,6 +73,7 @@
 
 .map__adress {
   .main-description;
+  padding-top: 12px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
