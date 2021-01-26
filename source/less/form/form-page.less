@@ -10,7 +10,7 @@
 
 .form-page__title {
   line-height: 36px;
-  margin-top: 27px;
+  margin-top: 23px;
   margin-bottom: 37px;
 
   @media (min-width: @tablet-width) {
@@ -141,15 +141,15 @@
 }
 
 .form-page__input:hover {
-  border: 1px solid @special-lighter-gray;
+  outline: 1px solid @special-lighter-gray;
 }
 
 .form-page__input:focus {
-  border: 2px solid @special-dark-gray;
+  outline: 2px solid @special-dark-gray;
 }
 
 .form-page__input:invalid {
-  border: 2px solid @basic-error;
+  outline: 2px solid @basic-error;
 }
 
 .form-page__label--name {
@@ -159,8 +159,9 @@
 }
 
 .form-page__input--name {
-  width: 210px;
-  margin-left: 7px;
+  width: 207px;
+  margin-left: 10px;
+  margin-top: 3px;
 
   @media (min-width: @tablet-width) {
     width: 544px;
@@ -268,7 +269,7 @@
 .form-page__contact {
   display: flex;
   flex-direction: column;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 19px;
