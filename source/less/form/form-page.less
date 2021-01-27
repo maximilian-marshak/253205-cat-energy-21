@@ -18,6 +18,10 @@
     margin-top: 64px;
     margin-bottom: 57px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 16px;
+  }
 }
 
 .form-page__description {
@@ -72,7 +76,7 @@
   border-bottom: 1px solid @gray-color-darker;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 28px;
     padding-top: 30px;
     border-bottom: none;
   }
@@ -96,13 +100,14 @@
   position: relative;
   display: block;
   background-color: @white-color;
+  margin-left: -4px;
 }
 
 .form-page__comment-title::after {
   content: "";
   position: absolute;
-  top: 10px;
-  right: -175px;
+  top: 13px;
+  right: -180px;
   z-index: -1;
   min-width: 158px;
   height: 2px;
@@ -135,7 +140,7 @@
   .form-label;
   height: 22px;
   padding-left: 15px;
-  padding-top: 13px;
+  padding-top: 12px;
   padding-bottom: 10px;
   border: 1px solid @special-lightest-gray;
 }
@@ -176,11 +181,13 @@
 
 .form-page__input--weight {
   width: 184px;
-  margin-left: 11px;
+  margin-left: 13px;
+  margin-top: 3px;
 
   @media (min-width: @tablet-width) {
     width: 515px;
     margin-left: 16px;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -195,6 +202,7 @@
   @media (min-width: @tablet-width) {
     width: 475px;
     margin-left: 14px;
+    margin-bottom: 11px;
   }
 
   @media (min-width: @desktop-width) {
@@ -206,7 +214,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 22px;
-  padding-bottom: 8px;
+  padding-bottom: 3px;
   border-bottom: 1px solid @gray-color-darker;
 
   @media (min-width: @tablet-width) {
@@ -273,11 +281,12 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 19px;
+    padding-top: 5px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
   }
 }
 
@@ -290,7 +299,7 @@
 
   @media (min-width: @desktop-width) {
     margin-right: 80px;
-    margin-top: 40px;
+    margin-top: 33px;
   }
 }
 
@@ -319,15 +328,15 @@
 
   @media (min-width: @desktop-width) {
     width: 570px;
-    margin-top: 40px;
+    margin-top: 33px;
   }
 }
 
 .form-page__label--contact::before {
   content: "";
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 20px;
+  right: 14px;
   width: 19px;
   height: 20px;
   background-image: url("/img/form/phone.svg");
@@ -346,30 +355,41 @@
 
 .form-page__input--email {
   width: 198px;
+  margin-top: 3px;
   margin-left: 7px;
+  padding-top: 7px;
 
   @media (min-width: @tablet-width) {
-    width: 530px;
-    margin-left: 14px;
+    width: 525px;
+    margin-left: 17px;
+    padding-left: 19px;
   }
 
   @media (min-width: @desktop-width) {
+    height: 32px;
     width: 464px;
     margin-left: 18px;
+    padding-left: 16px;
   }
 }
 
 .form-page__input--tel {
   width: 183px;
-  margin-left: 4px;
+  padding-top: 7px;
+  margin-top: 9px;
+  margin-left: 6px;
 
   @media (min-width: @tablet-width) {
-    width: 515px;
-    margin-left: 9px;
+    width: 510px;
+    margin-left: 10px;
+    margin-top: 3px;
+    padding-left: 19px;
+    padding-top: 14px;
   }
 
   @media (min-width: @desktop-width) {
     width: 452px;
+    padding-left: 16px;
   }
 }
 
@@ -379,13 +399,13 @@
   margin-bottom: 11px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 23px;
+    margin-bottom: 25px;
   }
 }
 
 .form-page__label--radio {
   color: @special_darker-gray;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   margin-left: 13px;
 
   @media (min-width: @tablet-width) {
@@ -405,18 +425,24 @@
   position: relative;
   display: block;
   background-color: @white-color;
-  padding-top: 23px;
+  padding-top: 24px;
+  margin-left: -4px;
 
   @media (min-width: @tablet-width) {
     width: 512px;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 35px;
   }
 }
 
 .form-page__contact-title::after {
   content: "";
   position: absolute;
-  top: 38px;
-  left: 200px;
+  top: 34px;
+  right: 0;
   z-index: -1;
   min-width: 99px;
   height: 2px;
@@ -425,7 +451,7 @@
   @media (min-width: @tablet-width) {
     content: "";
     position: absolute;
-    top: 45px;
+    top: 49px;
     left: -70px;
     z-index: -1;
     min-width: 768px;
@@ -459,6 +485,7 @@
 .form-page__textarea {
   width: 260px;
   height: 137px;
+  margin-top: 4px;
   padding-top: 10px;
   padding-left: 15px;
   border: 1px solid @special-lighter-gray;
@@ -478,7 +505,7 @@
 .form-page__additional {
   display: flex;
   flex-direction: column;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -495,13 +522,14 @@
   position: relative;
   display: block;
   background-color: @white-color;
+  margin-left: -4px;
 }
 
 .form-page__additional-title::after {
   content: "";
   position: absolute;
   top: 13px;
-  right: -155px;
+  right: -160px;
   z-index: -1;
   min-width: 136px;
   height: 2px;
@@ -540,7 +568,7 @@
     width: 221px;
     margin-right: 63px;
     margin-left: 59px;
-    margin-top: 30px;
+    margin-top: 27px;
     margin-bottom: 13px;
   }
 
@@ -552,17 +580,25 @@
   }
 }
 
+.form-page__label--checkbox:first-of-type {
+  margin-top: 6px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 26px;
+  }
+}
+
 .form-page__label--checkbox::before {
   content: "";
   position: absolute;
-  top: 2px;
+  top: -5px;
   left: -47px;
   width: 28px;
   height: 28px;
   border: 1px solid @special-lighter-gray;
 
   @media (min-width: @tablet-width) {
-    top: -8px;
+    top: -5px;
     left: -58px;
     width: 38px;
     height: 38px;
@@ -572,7 +608,7 @@
 .form-page__label--checkbox::after {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 3px;
   left: -40px;
   width: 18px;
   height: 14px;
