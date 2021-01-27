@@ -6,7 +6,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body class="page__body">
+  <body class="page__body page__body--toggle">
 
     <!--header-->
 
@@ -15,28 +15,34 @@
       <!--header logo-->
 
       <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150" width="191" height="38" alt="Интернет магазин Кэт энерджи">
+        <picture class="page__header__logo-size">
+          <source media="(min-width: 1440px)" srcset="/img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="/img/logo-tablet.svg">
+          <img src="/img/logo-mob.svg" alt="Интернет магазин Кэт энерджи">
+        </picture>
       </a>
 
       <!--header navigation-->
 
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle">
           <span class="visually-hidden">
             Открыть меню
           </span>
         </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
+        <ul class="main-nav__list ">
+          <li class="main-nav__item ">
+            <a class="main-nav__link main-nav__link--catalog main-nav__link--toggle" href="index.html">
+              Главная
+            </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">
+          <li class="main-nav__item main-nav__item--toggle">
+            <a class="main-nav__link main-nav__link--toggle" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link main-nav__link--toggle">
               Подбор программы
             </a>
           </li>
@@ -44,7 +50,7 @@
       </nav>
     </header>
 
-      <!--main-->
+    <!--main-->
 
     <main class="page-main">
 
@@ -56,7 +62,7 @@
             Подбор программы
           </h1>
           <p class="form-page__description">
-            Заполните анкету, и мы подберем программу питания для вашего кота
+            Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота
           </p>
 
           <!--form-->
@@ -66,7 +72,7 @@
               <!--form common fields-->
 
               <fieldset class="form-page__common">
-                <label class="form-page__label" for="name">
+                <label class="form-page__label form-page__label--name" for="name">
                   Имя:*
                   <input class="form-page__input form-page__input--name" type="text" name="name" id="name" required placeholder="Барсик">
                 </label>
@@ -84,20 +90,20 @@
 
               <fieldset class="form-page__preferences">
                 <label class="form-page__label form-page__label--radio" for="weightLoss">
-                  <input class="form-page__input form-page__input--radio" type="radio" name="preference" id="weightLoss" value="Weight_loss" checked>
+                  <input class="form-page__input form-page__input--radio visually-hidden checked" type="radio" name="preference" id="weightLoss" value="Weight_loss" checked>
                   Похудение
                 </label>
                 <label class="form-page__label form-page__label--radio" for="weightGain">
-                  <input class="form-page__input form-page__input--radio" type="radio" name="preference" id="weightGain" value="Weight_gain">
+                  <input class="form-page__input form-page__input--radio visually-hidden" type="radio" name="preference" id="weightGain" value="Weight_gain">
                   Набор массы
                 </label>
                 <label class="form-page__label form-page__label--radio" for="needAdvice">
-                  <input class="form-page__input form-page__input--radio" type="radio" name="preference" id="needAdvice" value="Advice">
+                  <input class="form-page__input form-page__input--radio visually-hidden" type="radio" name="preference" id="needAdvice" value="Advice">
                   Не знаю (Нужен ваш совет)
                 </label>
               </fieldset>
 
-            </div>>
+            </div>
 
             <!--form contact fields-->
 
@@ -105,7 +111,7 @@
               <legend class="form-page__contact-title form-page__legend">
                 Контактные данные (владельца кота)
               </legend>
-              <label class="form-page__label form-page__label--contact" for="contactEmail">
+              <label class="form-page__label form-page__label--email" for="contactEmail">
                 E-mail:*
                 <input class="form-page__input form-page__input--email" type="email" name="contact" id="contactEmail" required placeholder="kuklachev@gmail.com">
               </label>
@@ -132,19 +138,19 @@
                 Дополнительно
               </legend>
               <label class="form-page__label form-page__label--checkbox" for="sugarSubstitute">
-                <input class="form-page__input" type="checkbox" name="additional" id="sugarSubstitute" value="Sugar_substitute" checked>
-                Сахорозаменитель
+                <input class="form-page__input visually-hidden" type="checkbox" name="additional" id="sugarSubstitute" value="Sugar_substitute" checked>
+                Сахарозаменитель
               </label>
               <label class="form-page__label form-page__label--checkbox" for="drinkingWater">
-                <input class="form-page__input" type="checkbox" name="additional" id="drinkingWater" value="Drinking_water">
+                <input class="form-page__input visually-hidden" type="checkbox" name="additional" id="drinkingWater" value="Drinking_water">
                 Питьевая вода
               </label>
               <label class="form-page__label form-page__label--checkbox" for="milk">
-                <input class="form-page__input" type="checkbox" name="additional" id="milk" value="Milk">
+                <input class="form-page__input visually-hidden" type="checkbox" name="additional" id="milk" value="Milk">
                 Молоко
               </label>
               <label class="form-page__label form-page__label--checkbox" for="vitamins">
-                <input class="form-page__input" type="checkbox" name="additional" id="vitamins" value="Vitamins">
+                <input class="form-page__input visually-hidden" type="checkbox" name="additional" id="vitamins" value="Vitamins">
                 Витамины
               </label>
             </fieldset>
@@ -168,9 +174,10 @@
             <p class="map__description">
               приглашаем к сотрудничеству дилеров!
             </p>
-            <p class="map__adress">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-            </p>
+            <div class="map__adress">
+              <p class="map__adress-street">ул. Большая Конюшенная, д.&nbsp;19/8</p>
+              <p class="map__adress-city">Санкт-Петербург</p>
+            </div>
           </div>
         </div>
         <div class="map__map">
@@ -184,44 +191,70 @@
 
     <footer class="page-footer wrapper">
 
-        <!--footer logo-->
+      <!--footer logo-->
 
-        <div class="page-footer__logo">
-          <img class="page-footer__logo-image" width="128" height="24" src="https://via.placeholder.com/150x150" alt="Логотип компании Кэт энерджи" >
-        </div>
+      <div class="page-footer__logo">
+        <img class="page-footer__logo-image" width="128" height="24" src="/img/footer/footer-logo.svg" alt="Логотип компании Кэт энерджи" >
+      </div>
 
-        <!--footer social media list-->
+      <!--footer social media list-->
 
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a href="#" class="social__link social__link--vkontakte">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item social__link--vkontakte">
+            <a href="#" class="social__link">
+              <span>
                 Мы в ВКонтакте
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link social__link--facebook">
+              </span>
+            </a>
+          </li>
+          <li class="social__item social__link--instagram">
+            <a href="#" class="social__link">
+              <span>
                 Мы в Фейсбук
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link social__link--instagram">
+              </span>
+            </a>
+          </li>
+          <li class="social__item social__link--facebook">
+            <a href="#" class="social__link">
+              <span>
                 Мы в Инстаграм
-              </a>
-            </li>
-          </ul>
-        </div>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-        <!--footer copyright block-->
+      <!--footer copyright block-->
 
-        <div class="page-footer__copyright copyright">
-          <a href="https://htmlacademy.ru/intensive/adaptive/22" class="copyright__link">
-            <p class="copyright__link-title">
-              HTML Academy
-            </p>
-            <img class="copyright__logo" width="163" height="34" src="https://via.placeholder.com/150x150" alt="Логотип компании разработчика">
-          </a>
-        </div>
-    </footer>
+      <div class="page-footer__copyright copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive/22" class="copyright__link">
+          <p class="copyright__link-title">
+            HTML Academy
+          </p>
+          <img class="copyright__logo" width="27" height="34" src="/img/footer/footer-logo-html.svg" alt="Логотип компании разработчика">
+        </a>
+      </div>
+  </footer>
+
+    <!--script burger-menu-->
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
+
   </body>
 </html>

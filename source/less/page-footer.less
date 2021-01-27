@@ -8,12 +8,16 @@
 /* footer logo styles */
 
 .page-footer__logo {
-  padding-top: 42px;
+  padding-top: 30px;
   padding-bottom: 32px;
   border-bottom: 1px solid @gray-color-darker;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 58px;
+  }
+
   @media (min-width: @desktop-width) {
-    padding-top: 64px;
+    padding-top: 43px;
   }
 }
 
@@ -31,8 +35,12 @@
   padding-bottom: 20px;
   border-bottom: 1px solid @gray-color-darker;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 42px;
+  }
+
   @media (min-width: @desktop-width) {
-    padding-top: 47px;
+    padding-top: 26px;
   }
 }
 
@@ -46,7 +54,7 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    margin: 15px auto 0;
+    margin: 10px auto 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -74,7 +82,7 @@
   background-repeat: no-repeat;
   background-size: contain;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     width: 29px;
     height: 17px;
     margin-top: 10px;
@@ -105,7 +113,7 @@
   background-image: url("/img/footer/icon_instagram.svg");
   background-repeat: no-repeat;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     width: 23px;
     height: 23px;
     background-image: url("/source/img/footer/icon_instagram-big.svg");
@@ -136,7 +144,7 @@
   background-image: url("/img/footer/icon_facebook.svg");
   background-repeat: no-repeat;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     width: 13px;
     height: 27px;
     background-image: url("/img/footer/icon_facebook-big.svg");
@@ -162,8 +170,12 @@
 /* copyright styles */
 
 .page-footer__copyright {
+  @media (min-width: @tablet-width) {
+    padding-top: 33px;
+  }
+
   @media (min-width: @desktop-width) {
-    margin-top: 15px;
+    margin-top: -13px;
   }
 }
 
@@ -171,7 +183,7 @@
   display: flex;
   justify-content: space-between;
   text-decoration: none;
-  padding-top: 21px;
+  padding-top: 19px;
   padding-bottom: 22px;
 }
 
